@@ -91,3 +91,33 @@ console.log("Is num less than or equal to str? ", num <= str); //true, value is 
 console.log("&&: ", num == str && num === str); //false, one condition is false
 console.log("||: ", num2 > num || num2 < str); //true, one condition is true and second is false
 console.log("!: ", num == str && !(num == num2)); //true, first condition is true, second is false
+
+//String Manupulation
+var firstname = "John"
+var lastname = "Doe"
+
+// string concatenation - joining two or more strings together
+var fullname = firstname + " " + lastname
+console.log("Full Name: " + fullname);
+
+// using template literals
+var fullname2 = `${firstname}`
+console.log("Full Name 2 " + fullname2 + " " + lastname);
+
+// using .concat method
+var fullname3 = firstname.concat(" ", lastname)
+console.log("Full Name 3: " + fullname3);
+
+// string methods (function) & peroperties (variables)
+//1. length: returns the length of the string
+// strings are zero indexed like arrays 
+console.log("Firstname Length: " + firstname.length); // 4
+
+//2. Uppercase: converts the string to uppercase
+console.log("Uppercase Firstname: " + firstname.toUpperCase()); // JOHN
+
+//3. indexOf: returns the index of the first occurrence of a substring
+console.log("Index of 'o' in Firstname: " + firstname.indexOf("o")); // 1
+
+//4. charAt: returns the character at the specified index
+console.log("Character at index 1 in Firstname: " + firstname.charAt(1)); // o
