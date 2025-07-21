@@ -73,6 +73,7 @@
 
 var num = 10
 var str = "10"
+var num2 = 20
 console.log("Is num equal to str? ", num == str); //true, value is same
 console.log("Is num strictly equal to str? ", num === str); //false, different types
 console.log("Is num not equal to str? ", num != str); //false, value is same
@@ -83,3 +84,10 @@ console.log("Is num greater than or equal to str? ", num >= str); //true, value 
 console.log("Is num less than or equal to str? ", num <= str); //true, value is same
 
 //Logical Operators: &&, ||, !
+//&&: and operator
+//||: or operator
+//!: not operator
+
+console.log("&&: ", num == str && num === str); //false, one condition is false
+console.log("||: ", num2 > num || num2 < str); //true, one condition is true and second is false
+console.log("!: ", num == str && !(num == num2)); //true, first condition is true, second is false
