@@ -65,6 +65,21 @@
         console.log("/=: ", (r/=g)); //r = 3, 15/5 = 3
         console.log("%=:", (t%=r)); //t=20, r=3; t = t%r => 3
         
-        
+//Comparison Operators: ==, ===, !=, !==, >, <, >=, <=
+//!: not operator
+//!=: not equal to
+//==: equal to
+//===: equal to and type
 
-        
+var num = 10
+var str = "10"
+console.log("Is num equal to str? ", num == str); //true, value is same
+console.log("Is num strictly equal to str? ", num === str); //false, different types
+console.log("Is num not equal to str? ", num != str); //false, value is same
+console.log("Is num strictly not equal to str? ", num !== str); //true, different types
+console.log("Is num greater than str? ", num > str); //false, value is same
+console.log("Is num less than str? ", num < str); //false, value is same
+console.log("Is num greater than or equal to str? ", num >= str); //true, value is same
+console.log("Is num less than or equal to str? ", num <= str); //true, value is same
+
+//Logical Operators: &&, ||, !
