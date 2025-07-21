@@ -121,3 +121,48 @@ console.log("Index of 'o' in Firstname: " + firstname.indexOf("o")); // 1
 
 //4. charAt: returns the character at the specified index
 console.log("Character at index 1 in Firstname: " + firstname.charAt(1)); // o
+
+//Arrays: zero indexed list of items
+// Creating an array:
+var cars = ["Toyota", "Honda", "Ford", "BMW"];
+console.log(cars);
+
+//Array functions:
+var fruit = Array("Apple", "Banana", "Cherry");
+console.log(fruit);
+
+//Accessing array elements:
+console.log("First car: " + cars[0]); // Toyota
+
+// Assigning a new value to an array element:
+cars[0] = "Lexus"
+console.log("Updated First car: ", cars); // Lexus
+
+// Array methods (functions) & properties (variables):
+//1. length: returns the length of the array
+console.log("Number of cars: " + cars.length); // 4
+//2. push: adds an element to the end of the array
+cars.push("Mercedes");
+console.log("After push: ", cars); // ["Lexus", "Honda", "Ford", "BMW", "Mercedes"]
+//3. unshift: adds an element to the beginning of the array
+cars.unshift("Audi");
+console.log("After unshift: ", cars); // ["Audi", "Lexus", "Honda", "Ford", "BMW", "Mercedes"]
+//4. pop: removes the last element of the array
+cars.pop();
+console.log("After pop: ", cars); // ["Audi", "Lexus", "Honda", "Ford", "BMW"]
+//5. shift: removes the first element of the array
+cars.shift();
+console.log("After shift: ", cars); // ["Lexus", "Honda", "Ford", "BMW"]
+//6. sort: sorts the array in ascending order
+cars.sort();
+console.log("After sort: ", cars); // ["Audi", "BMW", "Ford", "Honda", "Lexus"]
+//7. reverse: reverses the order of the array
+cars.reverse();
+console.log("After reverse: ", cars); // ["Lexus", "Honda", "Ford", "BMW", "Audi"]
+//8. slice: returns a copied portion of the array
+var newCars = cars.slice(1, 2); // index 1 to index 2 (not inclusive)
+console.log("After slice: ", cars); // ["Lexus", "BMW", "Audi"]
+//9a. slice: returns a shallow copy of a portion of an array
+//splice(startIndex, deleteCount, item1, item2, ...): modifies the original array
+cars.splice(1,0, "Tesla", "Nissan"); // at index 1, delete 0 items and add Tesla and Nissan
+console.log("After splice: ", cars); // ["Lexus", "Tesla", "Nissan", "Honda", "Ford", "BMW", "Audi"]
