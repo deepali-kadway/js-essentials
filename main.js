@@ -184,3 +184,17 @@ var matrix = [
 console.log("2D Array: ", matrix);
 //Accessing elements in a 2D array
 console.log("Element at row 1, column 2: ", matrix[1][2]); // 6
+
+//Functions: block of code that performs a specific task
+//Syntax: funtion functionName(parameters) { code }
+//Parameters are variables that are used in the function definition
+// return keyword can be used to return a value from the function
+
+//Defining a function required the function keyword
+function sum(a,b){
+  var result = a + b;
+  return result;  // returns the result of the addition
+}
+//Calling a function: using the function name followed by parentheses
+var total = sum(5, 10);
+console.log("Total: " + total); // Total: 15
