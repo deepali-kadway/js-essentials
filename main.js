@@ -166,3 +166,21 @@ console.log("After slice: ", cars); // ["Lexus", "BMW", "Audi"]
 //splice(startIndex, deleteCount, item1, item2, ...): modifies the original array
 cars.splice(1,0, "Tesla", "Nissan"); // at index 1, delete 0 items and add Tesla and Nissan
 console.log("After splice: ", cars); // ["Lexus", "Tesla", "Nissan", "Honda", "Ford", "BMW", "Audi"]
+//9b. splice: remove elements from an array
+cars.splice(3,2);
+console.log(("Splice Remove: ", cars)); // ["Lexus", "Tesla", "Nissan", "Audi"]
+
+var numbers = [4, 9, 16, 25]
+//10. Map: creates a new array with results from calling a function for every item within the current array
+var sqrnumbers = numbers.map(Math.sqrt)
+console.log("Square Root of Numbers: ", sqrnumbers); // [2, 3, 4, 5]
+
+//2d arrays
+var matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+console.log("2D Array: ", matrix);
+//Accessing elements in a 2D array
+console.log("Element at row 1, column 2: ", matrix[1][2]); // 6
