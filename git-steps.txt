@@ -1,0 +1,8 @@
+git -v //checks git version
+git init // initializes Git but not uploaded as repository
+git add . //add all changes to be committed and put it in staged
+git commit -m "message" // commit your code
+git remote add <name> <url>
+git push
+git pull
+git branch featurename
