@@ -198,3 +198,57 @@ function sum(a,b){
 //Calling a function: using the function name followed by parentheses
 var total = sum(5, 10);
 console.log("Total: " + total); // Total: 15
+
+//Loops and Conditionals
+// 1. if, else if, else statements
+var age = 19;
+if(age >= 21){
+    console.log("You are an adult.");
+} else if(age >= 18){
+    console.log("You are a young adult.");
+} else {
+    console.log("You are a minor.");
+}
+// 2. switch statements
+var day = "Monday";
+switch(day){
+    case "Monday":
+        console.log("It's Monday!");
+        break;
+    case "Tuesday":
+        console.log("It's Tuesday!");
+        break;
+    case "Wednesday":
+        console.log("It's Wednesday!");
+        break;
+    default:
+        console.log("It's another day.");
+}
+// 3. Loops: used to repeat a block of code multiple times
+// a. for Loop: used to repeat a block of code a specific number of times
+for(var i = 0; i < 3; i++){
+    console.log("For Loop Iteration: " + i);
+}
+//b. while loop: used to repeat a block of code while a condition is true
+var j = 0;
+while(j < 3){
+    console.log("While Loop Iteration: " + j);
+    j++;  // Increment j to avoid infinite loop
+}
+
+//c. do while loop: similar to while loop, but the code block is executed at least once
+var k = 0;
+do {
+    console.log("Do While Loop Iteration: " + k);
+    k++;  // Increment k to avoid infinite loop
+}while(k < 3);
+
+//d. for..in loop: used to iterate over the properties of an object
+for(var key in person){
+    console.log("Key: " + key + ", Value: " + person[key]);
+}
+
+//e. for..of loop: used to iterate over the values of an iterable object (like arrays)
+for(var value of cars){
+    console.log("Car: " + value);
+}
