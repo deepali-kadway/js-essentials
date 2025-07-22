@@ -5,4 +5,8 @@ git commit -m "message" // commit your code
 git remote add <name> <url>
 git push
 git pull
-git branch featurename
+git branch branchname //create a branch
+git branch  //to check all branches currently in your repo
+git checkout branchname     //shift to the particular branch 
+git push --set-upstream origin branchname
+git push    //push to github
